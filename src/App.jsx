@@ -29,9 +29,9 @@ function App() {
 
       <Stack className="box-container" marginTop={5} style={templateArea}>
         {[ 1, 2 ,3 ].map((box) => {
-            const numero = `box${box}`
+            const numero = `box${box}` // resultat "box1", "box2" ou "box3"
             return(
-              <Box key={numero} className={numero}>
+              <Box key={box} className={numero}>
                 <Fab aria-label="add" data-box={box} onClick={handleStyle} sx={{ position: "absolute", bottom: "5%", right: "5%" }}>
                   <AddIcon data-icon={box} />
                 </Fab>

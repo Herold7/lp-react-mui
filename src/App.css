@@ -52,6 +52,34 @@
   transition: all 300ms ease-in-out;
 }
 
+
+
+
+
+
+
+
+.box:not(#active) {
+  border-radius: 10vw;
+  transition: all 300ms ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+.box:not(#active) button {
+  position: inherit;
+  right: inherit;
+  bottom: inherit;
+}
+
 .box1,
 .box2,
 .box3 {
@@ -62,7 +90,7 @@
 .box2,
 .box3 {
   border-radius: 2vw;
-  transition: all 5s ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .box1 {
@@ -80,29 +108,7 @@
   background-color: #2f7c32;
 }
 
-.iconActive {
+#active button {
   transform: rotate(45deg);
+  transition: all 300ms ease-in-out;
 }
-
-
-
-/* 
-  BOX1 OPEN =
-  grid-template-areas: 
-  "box1 box2"
-  "box1 box3"
-  ;
-
-  BOX2 OPEN =
-  grid-template-areas: 
-  "box1 box2"
-  "box3 box2"
-  ;
-
-  BOX3 OPEN =
-  grid-template-areas: 
-  "box1 box3"
-  "box2 box3"
-  ;
-
-*/
